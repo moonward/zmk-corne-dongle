@@ -1,5 +1,3 @@
-/*
- * Eyelash Corne (3x6) - Miryoku-based keymap
  * Controller: nice!nano v2
  */
 
@@ -87,7 +85,7 @@
         // ├──────┼──────┼──────┼──────┼──────┼──────╫──────┼──────┼──────┼──────┼──────┼──────┤
         // │      │  Z   │  X   │  C   │  V   │  B   ║  N   │  M   │  ,   │  .   │  /   │      │
         // └──────┴──────┴──────┼──────┼──────┼──────╫──────┼──────┼──────┼──────┴──────┴──────┘
-        //                      │MED/Es│NAV/Sp│MOU/Tb║SYM/En│NUM/Bs│ KANA │
+        //                      │MED/Es│NAV/Sp│MOU/Tb║SYM/En│NUM/Bs│ INT2 │
         //                      └──────┴──────┴──────╨──────┴──────┴──────┘
         base_layer {
             display-name = "Base";
@@ -95,7 +93,7 @@
                 &none  &kp Q          &kp W          &kp E           &kp R           &kp T         &kp Y        &kp U           &kp I           &kp O          &kp P            &none
                 &none  &hml LGUI A    &hml LALT S    &hml LCTRL D    &hml LSHFT F    &kp G         &kp H        &hmr RSHFT J    &hmr RCTRL K    &hmr RALT L    &hmr RGUI SEMI   &none
                 &none  &kp Z          &kp X          &kp C           &kp V           &kp B         &kp N        &kp M           &kp COMMA       &kp DOT        &kp SLASH        &none
-                                                     &lt MEDIA ESC   &lt NAV SPACE   &lt MOUSE TAB &lt SYM RET  &lt NUM BSPC    &kp KANA
+                                                     &lt MEDIA ESC   &lt NAV SPACE   &lt MOUSE TAB &lt SYM RET  &lt NUM BSPC    &kp INT2
             >;
         };
 
