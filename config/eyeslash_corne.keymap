@@ -1,4 +1,6 @@
- * Controller: nice!nano v2
+/*
+ * Eyelash Corne (3x6) - Miryoku-based keymap
+* Controller: nice!nano v2
  */
 
 #include <behaviors.dtsi>
