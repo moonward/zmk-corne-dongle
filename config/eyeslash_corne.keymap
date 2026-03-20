@@ -99,7 +99,7 @@
         // ┌──────┬──────┬──────┬──────┬──────┬──────┬──────╥──────┬──────┬──────┬──────┬──────┬──────┐
         // │      │  Q   │  W   │  E   │  R   │  T   │      ║  Y   │  U   │  I   │  O   │  P   │      │
         // ├──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────╫──────┼──────┼──────┼──────┼──────┼──────┤
-        // │      │GUI/A │ALT/S │CTL/D │SFT/F │  G   │      │      │      ║  H   │SFT/J │CTL/K │ALT/L │GUI/; │      │
+        // │      │GUI/A │ALT/S │CTL/D │SFT/F │  G   │      │      │      ║  H   │SFT/J │CTL/K │ALT/L │GUI/' │      │
         // ├──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────╫──────┼──────┼──────┼──────┼──────┼──────┤
         // │      │  Z   │  X   │  C   │  V   │  B   │      │      ║  N   │  M   │  ,   │  .   │  /   │      │
         // └──────┴──────┴──────┼──────┼──────┼──────┼──────┴──────╨──────┴──────┼──────┼──────┼──────┴──────┘
@@ -109,7 +109,7 @@
             display-name = "Base";
             bindings = <
                 &none  &kp Q          &kp W          &kp E           &kp R           &kp T    &none     &kp Y        &kp U           &kp I           &kp O          &kp P            &none
-                &none  &hml LGUI A    &hml LALT S    &hml LCTRL D    &hml LSHFT F    &kp G    &none  &none  &none  &kp H        &hmr RSHFT J    &hmr RCTRL K    &hmr RALT L    &hmr RGUI SEMI   &none
+                &none  &hml LGUI A    &hml LALT S    &hml LCTRL D    &hml LSHFT F    &kp G    &none  &none  &none  &kp H        &hmr RSHFT J    &hmr RCTRL K    &hmr RALT L    &hmr RGUI SQT   &none
                 &none  &kp Z          &kp X          &kp C           &kp V           &kp B    &none  &none     &kp N        &kp M           &kp COMMA       &kp DOT        &kp SLASH        &none
                                                      &lt MEDIA ESC   &lt NAV SPACE   &lt MOUSE TAB                       &lt SYM RET  &lt NUM BSPC    &kp INT2
             >;
@@ -152,9 +152,9 @@
         num_layer {
             display-name = "Num";
             bindings = <
-                &none  &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RBKT     &none     &none  &none       &none       &none      &none      &none
+                &none  &kp LBKT   &kp N1  &kp N2   &kp N3  &kp RBKT     &none     &none  &none       &none       &none      &none      &none
                 &none  &kp SEMI   &kp N4  &kp N5   &kp N6  &kp EQUAL    &none  &none  &none  &none  &kp RSHFT   &kp RCTRL   &kp RALT   &kp RGUI   &none
-                &none  &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BSLH     &none  &none     &none  &none       &none       &none      &none      &none
+                &none  &kp GRAVE  &kp N7  &kp N8   &kp N9  &kp BSLH     &none  &none     &none  &none       &none       &none      &none      &none
                                           &kp DOT  &kp N0  &kp MINUS                       &none  &none       &none
             >;
         };
@@ -163,9 +163,9 @@
         sym_layer {
             display-name = "Sym";
             bindings = <
-                &none  &kp LBRC   &kp AMPS  &kp ASTRK  &kp LPAR   &kp RBRC     &none     &none  &none       &none       &none      &none      &none
+                &none  &kp LBRC   &kp EXCL  &kp AT     &kp HASH   &kp RBRC     &none     &none  &none       &none       &none      &none      &none
                 &none  &kp COLON  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS     &none  &none  &none  &none  &kp RSHFT   &kp RCTRL   &kp RALT   &kp RGUI   &none
-                &none  &kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE     &none  &none     &none  &none       &none       &none      &none      &none
+                &none  &kp TILDE  &kp AMPS  &kp ASTRK  &kp LPAR   &kp PIPE     &none  &none     &none  &none       &none       &none      &none      &none
                                             &kp LPAR   &kp RPAR   &kp UNDER                       &none  &none       &none
             >;
         };
