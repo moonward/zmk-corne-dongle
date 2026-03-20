@@ -346,3 +346,5 @@ layers:
 combos:
 - p: [18, 22]
   k: Fun
+- p: [1, 11]
+  k: GUI+SHIFT+S

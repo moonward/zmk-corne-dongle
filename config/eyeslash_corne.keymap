@@ -97,6 +97,13 @@
             key-positions = <18 22>;
             bindings = <&mo FUN>;
         };
+
+        // Q(pos 1) + P(pos 11) → Screenshot (GUI+SHIFT+S)
+        combo_screenshot {
+            timeout-ms = <50>;
+            key-positions = <1 11>;
+            bindings = <&kp LG(LS(S))>;
+        };
     };
 
     keymap {
