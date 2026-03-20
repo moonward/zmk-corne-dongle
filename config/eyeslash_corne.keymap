@@ -56,6 +56,14 @@
             hold-trigger-on-release;
         };
 
+        // INT2 tap-dance: tap = INT2 (IME toggle), double-tap = caps_word
+        td_int2: td_int2 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp INT2>, <&caps_word>;
+        };
+
         // Right Home Row Mod
         hmr: hmr {
             compatible = "zmk,behavior-hold-tap";
@@ -111,7 +119,7 @@
                 &none  &kp Q          &kp W          &kp E           &kp R           &kp T    &none     &kp Y        &kp U           &kp I           &kp O          &kp P            &none
                 &none  &hml LGUI A    &hml LALT S    &hml LCTRL D    &hml LSHFT F    &kp G    &none  &none  &none  &kp H        &hmr RSHFT J    &hmr RCTRL K    &hmr RALT L    &hmr RGUI SQT   &none
                 &none  &kp Z          &kp X          &kp C           &kp V           &kp B    &none  &none     &kp N        &kp M           &kp COMMA       &kp DOT        &kp SLASH        &none
-                                                     &lt MEDIA ESC   &lt NAV SPACE   &lt MOUSE TAB                       &lt SYM RET  &lt NUM BSPC    &kp INT2
+                                                     &lt MEDIA ESC   &lt NAV SPACE   &lt MOUSE TAB                       &lt SYM RET  &lt NUM BSPC    &td_int2
             >;
         };
 
