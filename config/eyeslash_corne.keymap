@@ -85,7 +85,7 @@
 
         // G(pos 18) + H(pos 22) → Fun layer
         combo_fun {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <18 22>;
             bindings = <&mo FUN>;
         };
