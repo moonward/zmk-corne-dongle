@@ -48,7 +48,7 @@ layers:
   - {t: '$$mdi:keyboard-tab$$', h: Mouse}
   - {t: '$$mdi:keyboard-return$$', h: Sym}
   - {t: '$$mdi:backspace$$', h: Num}
-  - {t: INT2, s: CAPS}
+  - '&td_int2'
   Nav:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -302,11 +302,11 @@ layers:
   - F9
   - $$mdi:printer-outline$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: RST, type: held}
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: BOOT, type: held}
+  - $$mdi:progress-download$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F11
@@ -347,4 +347,4 @@ combos:
 - p: [18, 22]
   k: Fun
 - p: [1, 11]
-  k: GUI+SHIFT+S
+  k: Gui+Sft+S
