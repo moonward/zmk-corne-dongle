@@ -104,6 +104,13 @@
             key-positions = <1 11>;
             bindings = <&kp LG(LS(S))>;
         };
+
+        // J(pos 23) + K(pos 24) → Escape (Vim home row escape)
+        combo_vim_esc {
+            timeout-ms = <50>;
+            key-positions = <23 24>;
+            bindings = <&kp ESC>;
+        };
     };
 
     keymap {
@@ -135,7 +142,7 @@
             display-name = "Nav";
             bindings = <
                 &none  &none      &none      &none       &none       &none    &none     &kp LC(Y)  &kp LC(V)   &kp LC(C)   &kp LC(X)  &kp LC(Z)  &none
-                &none  &kp LGUI   &kp LALT   &kp LCTRL   &kp LSHFT   &none    &none  &none  &none  &kp LEFT   &kp DOWN    &kp UP      &kp RIGHT  &kp DEL    &none
+                &none  &kp LGUI   &kp LALT   &kp LCTRL   &kp LSHFT   &none    &none  &none  &none  &kp LEFT   &kp DOWN    &kp UP      &kp RIGHT  &kp COLON  &none
                 &none  &none      &none      &none       &none       &none    &none  &none     &kp HOME   &kp PG_DN   &kp PG_UP   &kp END    &kp INS    &none
                                              &none       &none       &none                       &kp RET    &kp BSPC    &kp DEL
             >;
