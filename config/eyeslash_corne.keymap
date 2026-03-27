@@ -30,14 +30,14 @@
 #define SYM   5
 #define FUN   6
 
+// lt にキーリピートを有効化（tap→holdで発動）
+&lt {
+    quick-tap-ms = <175>;
+};
+
 / {
 
     behaviors {
-
-        // lt にキーリピートを有効化（tap→holdで発動）
-        lt {
-            quick-tap-ms = <175>;
-        };
 
         // Left Home Row Mod
         hml: hml {
