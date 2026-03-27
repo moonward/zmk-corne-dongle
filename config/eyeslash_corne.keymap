@@ -34,6 +34,11 @@
 
     behaviors {
 
+        // lt にキーリピートを有効化（tap→holdで発動）
+        lt {
+            quick-tap-ms = <175>;
+        };
+
         // Left Home Row Mod
         hml: hml {
             compatible = "zmk,behavior-hold-tap";
