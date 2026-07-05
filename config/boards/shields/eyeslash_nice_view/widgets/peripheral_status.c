@@ -36,6 +36,11 @@ static void draw_top(lv_obj_t *widget, lv_color_t cbuf[], const struct status_st
 
     lv_draw_label_dsc_t label_dsc;
     init_label_dsc(&label_dsc, LVGL_FOREGROUND, &lv_font_montserrat_16, LV_TEXT_ALIGN_RIGHT);
+    lv_draw_label_dsc_t label_dsc_battery_pct;
+    init_label_dsc(&label_dsc_battery_pct, LVGL_FOREGROUND, &lv_font_montserrat_16,
+                   LV_TEXT_ALIGN_CENTER);
+    lv_draw_label_dsc_t label_dsc_side;
+    init_label_dsc(&label_dsc_side, LVGL_FOREGROUND, &lv_font_montserrat_24, LV_TEXT_ALIGN_CENTER);
     lv_draw_rect_dsc_t rect_black_dsc;
     init_rect_dsc(&rect_black_dsc, LVGL_BACKGROUND);
 
@@ -48,6 +53,15 @@ static void draw_top(lv_obj_t *widget, lv_color_t cbuf[], const struct status_st
     // Draw output status
     canvas_draw_text(canvas, 0, 0, CANVAS_SIZE, &label_dsc,
                      state->connected ? LV_SYMBOL_WIFI : LV_SYMBOL_CLOSE);
+
+    // Draw battery percentage
+    char battery_text[6] = {};
+    snprintf(battery_text, sizeof(battery_text), "%d%%", state->battery);
+    canvas_draw_text(canvas, 0, 22, CANVAS_SIZE, &label_dsc_battery_pct, battery_text);
+
+    // Draw side label (fixed per shield build, e.g. "L" or "R"; no-op if unset)
+    canvas_draw_text(canvas, 0, 40, CANVAS_SIZE, &label_dsc_side,
+                     CONFIG_EYESLASH_NICE_VIEW_SIDE_LABEL);
 
     // Rotate canvas
     rotate_canvas(canvas);

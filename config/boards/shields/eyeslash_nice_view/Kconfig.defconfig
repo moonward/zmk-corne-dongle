@@ -38,8 +38,13 @@ config EYESLASH_NICE_VIEW_WIDGET_STATUS
     bool
     default y
     select LV_FONT_MONTSERRAT_16
+    select LV_FONT_MONTSERRAT_24
     select LV_USE_IMAGE
     select LV_USE_CANVAS
+
+config EYESLASH_NICE_VIEW_SIDE_LABEL
+    string "Letter shown on the peripheral status screen (e.g. L or R)"
+    default ""
 
 if !ZMK_SPLIT || ZMK_SPLIT_ROLE_CENTRAL
 
