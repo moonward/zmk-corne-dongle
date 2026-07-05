@@ -2,8 +2,6 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: gpeye
-      url-base: https://github.com/GPeye
     - name: tokyo2006
       url-base: https://github.com/tokyo2006
     - name: carrefinho
@@ -11,9 +9,6 @@ manifest:
     - name: englmaxi
       url-base: https://github.com/englmaxi
   projects:
-    - name: hammerbeam-slideshow
-      remote: gpeye
-      revision: main 
     - name: zmk
       remote: zmkfirmware
       revision: 484a0547078228f6957ed164523823e39fbedec4  # main @ 2026-07-05, needed for Zephyr 4.1 (prospector new-status-screens)
