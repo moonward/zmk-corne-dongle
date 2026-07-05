@@ -21,11 +21,11 @@ include:
       -DCONFIG_ZMK_STUDIO=y
       -DCONFIG_ZMK_STUDIO_LOCKING=n
     artifact-name: prospector_radii
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: eyeslash_corne_peripheral_left nice_view_custom
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: eyeslash_corne_peripheral_right nice_view_custom
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: settings_reset
     artifact-name: settings_reset_nice_nano_v2
   - board: xiao_ble//zmk
