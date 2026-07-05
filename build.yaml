@@ -23,8 +23,10 @@ include:
     artifact-name: prospector_radii
   - board: nice_nano//zmk
     shield: eyeslash_corne_peripheral_left nice_view
+    artifact-name: eyeslash_corne_peripheral_left
   - board: nice_nano//zmk
     shield: eyeslash_corne_peripheral_right nice_view
+    artifact-name: eyeslash_corne_peripheral_right
   - board: nice_nano//zmk
     shield: settings_reset
     artifact-name: settings_reset_nice_nano_v2
