@@ -296,10 +296,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   Fun:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - F12
-  - F7
-  - F8
-  - F9
+  - F10
+  - F1
+  - F2
+  - F3
   - $$mdi:printer-outline$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
@@ -324,10 +324,10 @@ layers:
   - RGUI
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - F10
-  - F1
-  - F2
-  - F3
+  - F12
+  - F7
+  - F8
+  - F9
   - PAUSE BREAK
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
