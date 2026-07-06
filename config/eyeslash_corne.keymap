@@ -62,9 +62,10 @@
         };
 
         // Nested hold-tap used by td_esc below: hold = caps_word, single tap = no-op
+        // (#binding-cells must be <2> per ZMK's hold-tap schema; caps_word/none ignore the unused params)
         hold_caps: hold_caps {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
             bindings = <&caps_word>, <&none>;
@@ -75,7 +76,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&hold_caps>, <&kp ESC>;
+            bindings = <&hold_caps 0 0>, <&kp ESC>;
         };
 
         // Right Home Row Mod
