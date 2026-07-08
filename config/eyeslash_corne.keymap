@@ -21,13 +21,13 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
-// Layer definitions
+// Layer definitions (order matches thumb-key left-to-right layout for Operator display)
 #define BASE  0
-#define NAV   1
-#define MOUSE 2
-#define MEDIA 3
-#define NUM   4
-#define SYM   5
+#define MEDIA 1
+#define NAV   2
+#define MOUSE 3
+#define SYM   4
+#define NUM   5
 #define FUN   6
 
 // lt にキーリピートを有効化（tap→holdで発動）
@@ -152,6 +152,17 @@
             >;
         };
 
+        // MEDIA (48 keys)
+        media_layer {
+            display-name = "Media";
+            bindings = <
+                &none  &none      &none      &none       &none       &none    &none     &none        &none          &none          &none        &none  &none
+                &none  &kp LGUI   &kp LALT   &kp LCTRL   &kp LSHFT   &none    &none  &none  &none  &kp C_PREV   &kp C_VOL_DN   &kp C_VOL_UP   &kp C_NEXT   &none  &none
+                &none  &none      &none      &none       &none       &none    &none  &none     &none        &none          &none          &none        &none  &none
+                                             &none       &none       &none                       &kp C_MUTE   &kp C_PP       &kp C_STOP
+            >;
+        };
+
         // NAV (48 keys)
         nav_layer {
             display-name = "Nav";
@@ -174,14 +185,14 @@
             >;
         };
 
-        // MEDIA (48 keys)
-        media_layer {
-            display-name = "Media";
+        // SYM (48 keys)
+        sym_layer {
+            display-name = "Sym";
             bindings = <
-                &none  &none      &none      &none       &none       &none    &none     &none        &none          &none          &none        &none  &none
-                &none  &kp LGUI   &kp LALT   &kp LCTRL   &kp LSHFT   &none    &none  &none  &none  &kp C_PREV   &kp C_VOL_DN   &kp C_VOL_UP   &kp C_NEXT   &none  &none
-                &none  &none      &none      &none       &none       &none    &none  &none     &none        &none          &none          &none        &none  &none
-                                             &none       &none       &none                       &kp C_MUTE   &kp C_PP       &kp C_STOP
+                &none  &kp LBRC   &kp EXCL  &kp AT     &kp HASH   &kp RBRC     &none     &none  &none       &none       &none      &none      &none
+                &none  &kp COLON  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS     &none  &none  &none  &none  &kp RSHFT   &kp RCTRL   &kp RALT   &kp RGUI   &none
+                &none  &kp TILDE  &kp AMPS  &kp ASTRK  &kp LPAR   &kp PIPE     &none  &none     &none  &none       &none       &none      &none      &none
+                                            &kp LPAR   &kp RPAR   &kp UNDER                       &none  &none       &none
             >;
         };
 
@@ -193,17 +204,6 @@
                 &none  &kp SEMI   &kp N4  &kp N5   &kp N6  &kp EQUAL    &none  &none  &none  &none  &kp RSHFT   &kp RCTRL   &kp RALT   &kp RGUI   &none
                 &none  &kp GRAVE  &kp N7  &kp N8   &kp N9  &kp BSLH     &none  &none     &none  &none       &none       &none      &none      &none
                                           &kp DOT  &kp N0  &kp MINUS                       &none  &none       &none
-            >;
-        };
-
-        // SYM (48 keys)
-        sym_layer {
-            display-name = "Sym";
-            bindings = <
-                &none  &kp LBRC   &kp EXCL  &kp AT     &kp HASH   &kp RBRC     &none     &none  &none       &none       &none      &none      &none
-                &none  &kp COLON  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS     &none  &none  &none  &none  &kp RSHFT   &kp RCTRL   &kp RALT   &kp RGUI   &none
-                &none  &kp TILDE  &kp AMPS  &kp ASTRK  &kp LPAR   &kp PIPE     &none  &none     &none  &none       &none       &none      &none      &none
-                                            &kp LPAR   &kp RPAR   &kp UNDER                       &none  &none       &none
             >;
         };
 
