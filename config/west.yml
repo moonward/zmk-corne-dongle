@@ -8,13 +8,15 @@ manifest:
       url-base: https://github.com/carrefinho
     - name: englmaxi
       url-base: https://github.com/englmaxi
+    - name: moonward
+      url-base: https://github.com/moonward
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: 484a0547078228f6957ed164523823e39fbedec4  # main @ 2026-07-05, needed for Zephyr 4.1 (prospector new-status-screens)
       import: app/west.yml
     - name: prospector-zmk-module                 # <--- and these
-      remote: carrefinho                         # <---
-      revision: ed98221f3b52b7066dbb10ba3af8a29150b93a5a  # feat/new-status-screens @ 2026-07-05
+      remote: moonward                           # <--- fork: Operator battery redesign (see customize-operator-battery branch)
+      revision: debebb4f054e121d34d6ed9bcb58557df20f3a7d  # customize-operator-battery @ 2026-07-08, based on carrefinho feat/new-status-screens
   self:
     path: config
