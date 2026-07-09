@@ -17,6 +17,6 @@ manifest:
       import: app/west.yml
     - name: prospector-zmk-module                 # <--- and these
       remote: moonward                           # <--- fork: Operator battery redesign (see customize-operator-battery branch)
-      revision: bfa76306fc261aa8fd2556a754fe19f85e3762a7  # customize-operator-battery @ 2026-07-08, based on carrefinho feat/new-status-screens
+      revision: 97af36be7dee83b35347e0429b6a79f5fef6d391  # customize-operator-battery @ 2026-07-09, compact battery + output widget
   self:
     path: config
