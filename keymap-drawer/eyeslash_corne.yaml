@@ -347,6 +347,6 @@ combos:
 - p: [18, 22]
   k: Fun
 - p: [1, 11]
-  k: Gui+Sft+S
+  k: $$mdi:printer-outline$$
 - p: [23, 24]
   k: $$mdi:keyboard-esc$$
